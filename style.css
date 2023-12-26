@@ -178,7 +178,6 @@ body {
 
 .about-btn {
   background-color: var(--primary-color);
-  text-decoration: none;
   color: var(--icom-color);
   border: none;
   outline: none;
@@ -189,11 +188,6 @@ body {
   font-size: 1rem;
   border-radius: 20px;
   margin: 5px;
-}
-
-.about-btn a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .about-btn:hover {
