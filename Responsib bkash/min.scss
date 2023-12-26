@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --bkash-defold-color:#E2136E;
+}
+
+.main-bkash-logo{
+    height:33px;
+    width:90px;
+    margin-left:70px;
+}
+
+//START NAVBAR 
+.navbar-wraper{
+    background-color: #E2136E;
+}
+//this is for maga menu
+.dropdown-menu ul{
+    list-style:none;
+    padding:0;
+}
+.dropdown-menu ul{
+    margin:20px 30px;
+}
+.dropdown-menu.show{
+    display:flex;
+ }
+.dropdown-menu li:first-child a{
+   font-weight:bold;
+   font-size:1rem;
+}
+@media screen and (min-width:968px) {
+        .dropdown:hover .dropdown-menu{
+            display: flex;
+            justify-content:space-evenly;
+            width: 100%;
+            left:0;
+    }
+    .dropdown .dropdown-menu{
+        transition:.5s;
+       }
+}
+@media screen and (max-width:678px) {
+    .dropdown:hover .dropdown-menu{
+        flex-direction:column;
+        width: 90%;
+        max-height: 80vh;
+        overflow-y:scroll;
+        flex-direction: column;
+}
+//end mega manu responsib
+//this is mega menu icons
+}
+.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #ddddddd0;
+}
+.icon-image{
+    height: 30px;
+    width: 30px;
+}
+// this is adjust nav links or images
+.dropdown-menu li{
+    display:flex;
+}
+.nav-item{
+    margin:0 20px;
+}
+//end all of mega menu
+//this is for manu links
+.language-chenge{
+    display:flex;
+    margin-left:23px;
+}
+.app-buttons{
+    display: flex;
+    margin-right:5px;
+}
+.nav-link{
+    color:#fff;
+    border:1px solid transparent;
+    border-radius:20px;
+}
+.nav-link:hover{
+    color:#fff;
+    border:1px solid #fff;
+}
+//this is for language buttons
+.language-btn{
+    text-decoration:none;
+    color:#fff;
+}
+.bkash-app-btn{
+    padding:4px 32px;
+    border-radius:15px;
+    background-color:#E2136E;
+    color:#fff;
+    border:2px solid #fff;
+    outline:none;
+    transition:.5s;
+}
+.bkash-app-btn:hover{
+   background-color: #fff;
+   color:#E2136E;
+}
+@media screen and (max-width:578px) {
+    .app-buttons{
+        display:none;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar-brand{
+      margin-left:-64px;
+    }
+    .hero .carousel-indicators button{
+      display:none;
+    }
+}
+//end of full navbar
+//this is hero section
+// this is for carosel indicators
+.hero .carousel-indicators button{
+    height:25px;
+    width: 25px;
+    border-radius:50%;
+    background-color:var(--bkash-defold-color);
+}
+.hero .carousel-indicators{
+   top:100%; 
+}
