@@ -8,7 +8,7 @@ body{
 }
 :root{
     --primary-color:red;
-    --secendery-color:rgb(255, 255, 255);
+    --secendery-color:rgb(247, 247, 247);
     --thard-color:rgb(47, 113, 255);
     --icom-color:#fff8f8;
     --background-color:#ffffff;
@@ -258,7 +258,7 @@ body{
 .sucsess-rate{
     height: 100px;
     width: 200px;
-    background-color: #f7f7f7;
+    background-color: var(--secendery-color);
     color:#000000;
     margin-top:20px;
     border-radius:10px;
@@ -381,10 +381,11 @@ body{
         height:500px;
     }
     .comment-tex{
-        height:220px;
+        height:165px;
         width:90%;
         margin-bottom:40px;
         margin-left:20px;
+        font-size: .8rem;
     }
     .comment-1{
         width:100%;
@@ -413,7 +414,7 @@ body{
     background-color: #ff9494;
 }
 .contuct-form{
-    height: 560px;
+    height: 500px;
     width: 800px;
     background-color:var(--secendery-color);
     border-radius:30px;
@@ -422,6 +423,7 @@ body{
     height: 500px;
     width: 300px;
     background-color:var(--secendery-color);
+    border-radius:30px;
 }
 .text-center{
     color:var(--text-color);
@@ -484,7 +486,7 @@ label{
        margin-top: 170px;
     }
     .contuct-form{
-        height: 500px;
+        height: 560px;
         width:90%;
         margin-left: 20px;
     }
