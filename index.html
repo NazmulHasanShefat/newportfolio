@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>Document</title>
+    <script src="script.js"></script>
 </head>
 <body>
 <header>
@@ -367,24 +368,28 @@
  
   <div class="contuct-form">
     <div class="main-contuc-form">
-      <form action="" onsubmit="sendemail(); reset(); return false;">
+      <form action="./action.php" name="myForm" onsubmit="return myVlidation()">
         <div class="con-name full-container">
           <label for="name">Your Name</label> <br>
-          <input type="name" class="box" id="name" placeholder="Enter Your Name" required>
+          <input type="name" name="name" class="box" id="name" placeholder="Enter Your Name">
+          <p class="error1"></p>
         </div>
 
         <div class="con-name">
           <label for="name">Your Email</label> <br>
-          <input type="email" class="box" id="email" placeholder="Enter Your Name" required>
+          <input type="email" name="email" class="box" id="email" placeholder="Enter Your Email">
+          <p class="error2"></p>
         </div>
 
         <div class="con-name">
-          <label for="name">Your Name</label> <br>
-          <input type="name" class="box" id="sub" placeholder="Enter Your Name" required>
+          <label for="name">Your Subject</label> <br>
+          <input type="name" name="sub" class="box" id="sub" placeholder="Enter Your Subject">
+          <p class="error3"></p>
         </div>
         <div class="con-name">
         <label for="w3review">Your Comment:</label> <br>
-        <textarea id="connent" name="w3review" rows="4" cols="50"></textarea>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment"></textarea><br>
+        <p class="error4"></p>
        </div>
 
        <div class="con-name">
@@ -430,7 +435,7 @@
     Email.send({
     Host : "smtp.gmail.com",
     Username : "mdnazmulhasan22323@gmail.com",
-    Password : "Shefat29933",
+    Password : "",
     To : 'mdnazmulhasan0879@gmail.com',
     From : document.getElemenById('email').value,
     Subject : "new contuct form for Enquari",

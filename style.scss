@@ -446,7 +446,7 @@ body{
 .con-name{
     margin-left:90px;
 }
-#connent{
+#comment{
     width: 600px;
     border:1px solid var(--thard-color);
     border-radius:5px;
@@ -489,7 +489,7 @@ label{
     .box{
         width: 90%;
     }
-    #connent{
+    #comment{
         width: 90%;
     }
     .contuct-para{
@@ -560,4 +560,9 @@ label{
     .copy{
         font-size: .8rem;
     }
+}
+// form validation
+.error1,.error2,.error3,.error4{
+    color:red;
+    font-weight:bold;
 }
