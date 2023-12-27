@@ -7,22 +7,22 @@ function myVlidation(){
     var isValid = true;
     var name = document.forms["myForm"]["name"].value
     if(name.length<5){
-        error1.innerHTML ="*Enter your name"
+        error1.innerHTML ="*Enter your name";
         isValid = false;
     };
-    var name = document.forms["myForm"]["email"].value
-    if(name.length<5){
-        error2.innerHTML ="*Enter your valid Email"
+    var email = document.forms["myForm"]["email"].value
+    if(email.length<5){
+        error2.innerHTML ="*Enter your valid Email";
         isValid = false;
     };
-    var name = document.forms["myForm"]["sub"].value
-    if(name.length<5){
-        error3.innerHTML ="*Enter your sub"
+    var subject = document.forms["myForm"]["Subject"].value
+    if(subject.length<5){
+        error3.innerHTML ="*Enter your valid subject";
         isValid = false;
     };
-    var name = document.forms["myForm"]["comment"].value
-    if(name.length<5){
-        error4.innerHTML ="*Enter your sub"
+    var comment = document.forms["myForm"]["comment"].value
+    if(comment.length<5){
+        error4.innerHTML ="*Enter your Comment";
         isValid = false;
     };
 
