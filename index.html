@@ -368,7 +368,8 @@
  
   <div class="contuct-form">
     <div class="main-contuc-form">
-      <form action="./action.php" name="myForm" onsubmit="return myVlidation()">
+      <form action="https://api.web3forms.com/submit" method="post" name="myForm" onsubmit="return myVlidation()">
+        <input type="hidden" name="access_key" value="df638974-a952-4d3a-ae04-3105e4e1df2d">
         <div class="con-name full-container">
           <label for="name">Your Name</label> <br>
           <input type="text" name="name" class="box" id="name" placeholder="Enter Your Name">
