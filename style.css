@@ -10,20 +10,22 @@ body {
 
 :root {
   --primary-color:red;
+  --secendery-color:rgba(255, 255, 255, 0.219);
+  --thard-color:rgb(47, 113, 255);
+  --background-color:#000000;
+  --text-color:rgb(255, 255, 255);
+  --button-color:rgb(255, 255, 255);
+  --icom-color:#fff8f8;
+}
+
+.dark {
+  --primary-color:red;
   --secendery-color:rgb(247, 247, 247);
   --thard-color:rgb(47, 113, 255);
   --icom-color:#fff8f8;
   --background-color:#ffffff;
   --text-color:black;
   --button-color:rgb(255, 255, 255);
-}
-
-.dark {
-  --primary-color:red;
-  --secendery-color:rgba(255, 255, 255, 0.219);
-  --thard-color:rgb(47, 113, 255);
-  --background-color:#000000;
-  --text-color:rgb(255, 255, 255);
 }
 
 .main-nav {
@@ -40,8 +42,13 @@ body {
 
 .navbar-brand {
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--icom-color);
   font-size: 1.5rem;
+  font-family: serif;
+}
+
+h2, h3 {
+  font-family: serif;
 }
 
 .navbar-brand:hover {
@@ -191,8 +198,29 @@ body {
   text-decoration: none;
 }
 
+.about-btn1 {
+  background-color: var(--thard-color);
+  color: var(--icom-color);
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin: 5px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
 .about-btn:hover {
   background-color: var(--thard-color);
+  color: var(--button-color);
+}
+
+.about-btn1:hover {
+  background-color: var(--primary-color);
   color: var(--button-color);
 }
 
@@ -478,6 +506,7 @@ body {
 
 #comment {
   width: 600px;
+  height: 80px;
   border: 1px solid var(--thard-color);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.0823529412);

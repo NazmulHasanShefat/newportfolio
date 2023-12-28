@@ -7,6 +7,13 @@ body{
     background-color: var(--background-color);
 }
 :root{
+    --primary-color:rgb(255, 255, 255);
+    --secendery-color:rgba(255, 255, 255, 0.219);
+    --thard-color:rgb(47, 113, 255);
+    --background-color:#000000;
+    --text-color:rgb(255, 255, 255);
+}
+.dark{
     --primary-color:red;
     --secendery-color:rgb(247, 247, 247);
     --thard-color:rgb(47, 113, 255);
@@ -14,14 +21,6 @@ body{
     --background-color:#ffffff;
     --text-color:black;
     --button-color:rgb(255, 255, 255);
-}
-.dark{
---primary-color:red;
---secendery-color:rgba(255, 255, 255, 0.219);
---thard-color:rgb(47, 113, 255);
---background-color:#000000;
---text-color:rgb(255, 255, 255);
-
 }
 .main-nav{
     background-color: var(--background-color);
