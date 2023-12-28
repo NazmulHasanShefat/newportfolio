@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="mini.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link nav-manu" href="#">Home</a>
+                <a class="nav-link nav-manu" href="https://nazmulhasanshefat.github.io/newportfolio/">Home</a>
               </li>
 
               <li class="nav-item">
@@ -76,24 +77,29 @@
  
   <div class="contuct-form">
     <div class="main-contuc-form">
-      <form action="" onsubmit="sendemail(); reset(); return false;">
+      <form action="https://api.web3forms.com/submit" method="post" name="myForm" onsubmit="return myVlidation()">
+        <input type="hidden" name="access_key" value="df638974-a952-4d3a-ae04-3105e4e1df2d">
         <div class="con-name full-container">
           <label for="name">Your Name</label> <br>
-          <input type="name" class="box" id="name" placeholder="Enter Your Name" required>
+          <input type="text" name="name" class="box" id="name" placeholder="Enter Your Name" required>
+          <p class="error1"></p>
         </div>
 
         <div class="con-name">
           <label for="name">Your Email</label> <br>
-          <input type="email" class="box" id="email" placeholder="Enter Your Name" required>
+          <input type="email" name="email" class="box" id="email" placeholder="Enter Your Email" required>
+          <p class="error2"></p>
         </div>
 
         <div class="con-name">
-          <label for="name">Your Name</label> <br>
-          <input type="name" class="box" id="sub" placeholder="Enter Your Name" required>
+          <label for="name">Your Subject</label> <br>
+          <input type="text" name="Subject" class="box" id="sub" placeholder="Enter Your Subject" required>
+          <p class="error3"></p>
         </div>
         <div class="con-name">
         <label for="w3review">Your Comment:</label> <br>
-        <textarea id="connent" name="w3review" rows="4" cols="50"></textarea>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment"></textarea><br>
+        <p class="error4"></p>
        </div>
 
        <div class="con-name">

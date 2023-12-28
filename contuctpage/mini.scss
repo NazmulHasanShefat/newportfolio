@@ -8,7 +8,7 @@ body{
 }
 :root{
     --primary-color:red;
-    --secendery-color:black;
+    --secendery-color:rgb(247, 247, 247);
     --thard-color:rgb(47, 113, 255);
     --icom-color:#fff8f8;
     --background-color:#ffffff;
@@ -17,7 +17,7 @@ body{
 }
 .dark{
 --primary-color:red;
---secendery-color:black;
+--secendery-color:rgba(255, 255, 255, 0.219);
 --thard-color:rgb(47, 113, 255);
 --background-color:#000000;
 --text-color:rgb(255, 255, 255);
@@ -52,6 +52,9 @@ body{
     cursor:pointer;
     margin-top:10px;
 }
+.m-icon{
+    background-color: #fff;
+}
 //end of nav
 
 // start contust form card 
@@ -69,14 +72,23 @@ body{
     background-color: #ff9494;
 }
 .contuct-form{
-    height: 500px;
+    height: 540px;
     width: 800px;
-    background-color:#f5f5f5;
+    background-color:var(--secendery-color);
+    border-radius: 25px;
 }
 .paragrap-box{
     height: 500px;
     width: 300px;
-    background-color: #f5f5f5;
+    background-color:var(--secendery-color);
+    color:var(--text-color);
+    border-radius: 25px;
+}
+input:focus{
+   border:2px solid var(--text-color);
+}
+h1,h5{
+    color:var(--text-color);
 }
 .contuct-image{
     height:180px;
@@ -101,11 +113,12 @@ body{
 .con-name{
     margin-left:90px;
 }
-#connent{
+#comment{
     width: 600px;
     border:1px solid var(--thard-color);
     outline:none;
     border-radius:5px;
+    resize: none;
 }
 .full-container{
     margin-top: 40px;
@@ -113,6 +126,7 @@ body{
 label{
     font-size: 1.2rem;
     font-weight:bold;
+    color:var(--text-color);
 }
 .sub-btn{
     padding-left: 20px;
@@ -134,6 +148,7 @@ label{
        flex-direction: column;
        width:100%;
        margin-top: 170px;
+       height: max-content;
     }
     .contuct-form{
         height: 500px;
@@ -143,7 +158,7 @@ label{
     .box{
         width: 90%;
     }
-    #connent{
+    #comment{
         width: 90%;
     }
     .contuct-para{
@@ -164,7 +179,7 @@ label{
 .foot-container{
   height: 200px;
   width:100%;
-  background-color:#f5f5f5;
+  background-color:var(--secendery-color);
   margin-top:50px;
 }
 .icons{
@@ -210,4 +225,8 @@ label{
     .copy{
         font-size: .8rem;
     }
+}
+.error1, .error2, .error3, .error4{
+    color:red;
+    font-weight:bold;
 }
