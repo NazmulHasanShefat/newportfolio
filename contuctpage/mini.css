@@ -97,7 +97,21 @@ body {
   border-radius: 25px;
 }
 
+input {
+  background-color: rgba(255, 255, 255, 0.1176470588);
+}
+
 input:focus {
+  background-color: transparent;
+  border: 2px solid var(--text-color);
+}
+
+textarea {
+  background-color: rgba(255, 255, 255, 0.1176470588);
+}
+
+textarea:focus {
+  background-color: transparent;
   border: 2px solid var(--text-color);
 }
 
@@ -167,7 +181,7 @@ label {
   .contuct-container {
     flex-direction: column;
     width: 100%;
-    margin-top: 170px;
+    margin-top: 25px;
     height: max-content;
   }
   .contuct-form {
@@ -231,7 +245,7 @@ label {
   .foot-container {
     height: 200px;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 111px;
   }
   .foot-titel {
     width: 100%;

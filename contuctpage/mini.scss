@@ -83,8 +83,19 @@ body{
     color:var(--text-color);
     border-radius: 25px;
 }
+input{
+    background-color: #ffffff1e;
+}
 input:focus{
-   border:2px solid var(--text-color);
+    background-color: transparent;
+    border:2px solid var(--text-color);
+}
+textarea{
+    background-color: #ffffff1e;
+}
+textarea:focus{
+    background-color: transparent;
+    border:2px solid var(--text-color);
 }
 h1,h5{
     color:var(--text-color);
@@ -146,7 +157,7 @@ label{
     .contuct-container{
        flex-direction: column;
        width:100%;
-       margin-top: 170px;
+       margin-top: 25px;
        height: max-content;
     }
     .contuct-form{
@@ -206,7 +217,7 @@ label{
     .foot-container{
         height: 200px;
         width:100%;
-        margin-top: 300px;
+        margin-top: 111px;
       }
       .foot-titel{
         width: 100%;

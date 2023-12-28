@@ -136,6 +136,10 @@ h2, h3 {
   .text-container {
     display: none;
   }
+  span {
+    color: var(--thard-color);
+    font-size: 2rem;
+  }
   .hero {
     flex-direction: column;
     width: 100%;
@@ -166,6 +170,7 @@ h2, h3 {
   }
   .m-icon {
     color: var(--icom-color);
+    font-size: 1rem;
   }
   .projects {
     flex-direction: column;
@@ -543,7 +548,7 @@ label {
   .contuct-container {
     flex-direction: column;
     width: 100%;
-    margin-top: 170px;
+    margin-top: 160px;
   }
   .contuct-form {
     height: 560px;
