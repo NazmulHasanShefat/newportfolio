@@ -5,6 +5,7 @@
 }
 body{
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 :root{
     --primary-color:red;
@@ -66,6 +67,7 @@ h2, h3{
     background-color: var(--background-color);
     color:var(--text-color);
     transition:.5s;
+    overflow: hidden;
 }
 .hello-text{
     color:var(--primary-color);
@@ -149,6 +151,9 @@ h2, h3{
 }
 // end project photo 
 @media screen and (max-width:678px){
+    body{
+        overflow-x: hidden;
+    }
     .text-container-2{
         display:block;
         margin-left:13px;
