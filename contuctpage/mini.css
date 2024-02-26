@@ -40,8 +40,14 @@ body {
 
 .navbar-brand {
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--icom-color);
   font-size: 1.5rem;
+  font-family: serif;
+  margin-left: 5px;
+}
+
+h2, h3 {
+  font-family: serif;
 }
 
 .navbar-brand:hover {
@@ -62,8 +68,13 @@ body {
   margin-top: 10px;
 }
 
-.m-icon {
+.navbar-toggler {
   background-color: #fff;
+  padding: 1px 7px;
+}
+
+.m-icon {
+  font-size: 1rem;
 }
 
 .contuct-container {
@@ -83,7 +94,7 @@ body {
 }
 
 .contuct-form {
-  height: 540px;
+  height: max-content;
   width: 800px;
   background-color: var(--secendery-color);
   border-radius: 25px;
@@ -129,6 +140,23 @@ h1, h5 {
   margin-right: 138px;
 }
 
+.contuct-info {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contct-add2 {
+  width: 110px;
+}
+
+.contct-add1 p {
+  margin-bottom: 8px;
+}
+
+.my-contact {
+  margin-bottom: 50px;
+}
+
 .box {
   width: 600px;
   height: 40px;
@@ -152,7 +180,7 @@ h1, h5 {
 }
 
 .full-container {
-  margin-top: 40px;
+  margin-top: 7px;
 }
 
 label {
@@ -171,6 +199,7 @@ label {
   border: none;
   outline: none;
   transition: 0.5s;
+  margin-bottom: 23px;
 }
 
 .sub-btn:hover {
@@ -200,7 +229,7 @@ label {
     width: 100%;
   }
   .paragrap-box {
-    height: 500px;
+    height: 391px;
     width: 90%;
     margin-left: 20px;
     margin-bottom: 30px;
@@ -218,11 +247,14 @@ label {
 
 .icons {
   margin: 20px;
-  font-size: 1.7rem;
+  height: 40px;
+  width: 40px;
+  font-size: 1rem;
   background-color: #fff;
   border-radius: 50%;
-  padding-left: 10px;
-  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--thard-color);
   transition: 0.5s;
 }
@@ -261,6 +293,7 @@ label {
   }
   .copy {
     font-size: 0.8rem;
+    margin-top: 25px;
   }
 }
 .error1, .error2, .error3, .error4 {

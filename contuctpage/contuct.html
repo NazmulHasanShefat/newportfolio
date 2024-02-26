@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="mini.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="script.js"></script>
     <title>Document</title>
 </head>
@@ -47,8 +49,8 @@
 </header>
 <!-- start contuct form -->
 <h1 class="text-center fw-bold">Contuct</h1>
-<h5 class="text-center fw-bold">Contuct width me</h5>
- <div class="contuct-container">
+<h5 class="my-contact text-center fw-bold">Contuct width me</h5>
+ <div data-aos="fade-up" class="contuct-container">
   
    <div class="paragrap-box text-center">
     <img src="contact1.png" class="contuct-image" alt="">
@@ -58,16 +60,16 @@
       <div class="info-icon">
         <i class="fa-solid fa-envelope"></i>
       </div>
-      <div class="contct-add">
+      <div class="contct-add1">
         <p>mdnazmulhasan0879@gmail.com</p>
       </div>
     </div>
 
-    <div class="contuct-info d-flex justify-content-around">
+    <div class="contuct-info2 d-flex justify-content-center gap-3">
       <div class="info-icon">
         <i class="fa-solid fa-phone"></i>
       </div>
-      <div class="contct-add">
+      <div class="contct-add2">
         <p class="number-m">01828096147</p>
       </div>
     </div>
@@ -168,7 +170,13 @@
           }
        }
   </script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 120,
+    duration: 1500,
+  });
+</script>
 
 </body>
 </html>

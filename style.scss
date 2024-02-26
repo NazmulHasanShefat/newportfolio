@@ -67,7 +67,6 @@ h2, h3{
     background-color: var(--background-color);
     color:var(--text-color);
     transition:.5s;
-    overflow: hidden;
 }
 .hello-text{
     color:var(--primary-color);
@@ -168,6 +167,7 @@ h2, h3{
     .hero{
         flex-direction:column;
         width:100%;
+        height: max-content;
     }  
     .image-container{
         width:90%;
@@ -249,7 +249,7 @@ h2, h3{
     padding-bottom: 10px;
     font-size: 1rem;
     border-radius:20px;
-    margin:5px;
+    margin-left:-7px;
     text-decoration: none;
     transition: all .5s ease-in-out;
 }
@@ -300,11 +300,10 @@ h2, h3{
         width:100%;
     }
     .sarvises-container{
-       margin-top: 250px;
-       margin-top: 460px;
+       margin-top: 504px;
     }
     .pro-container{
-      margin-top: 180px;
+      margin-top: 50px;
     }
     .main-card{
         width: 80%;
@@ -316,6 +315,9 @@ h2, h3{
     .sarvice-cd{
         margin-left: 30px;
         margin-bottom: 10px;
+    }
+    .about-btn1{
+        margin-left:12px;
     }
 }
 //end of sarvive container
