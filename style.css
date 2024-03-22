@@ -79,6 +79,10 @@ h2, h3 {
   transition: 0.5s;
 }
 
+.my-paragrap {
+  margin-bottom: 30px;
+}
+
 .hello-text {
   color: var(--primary-color);
 }

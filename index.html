@@ -56,7 +56,7 @@
       <h2 class="hello-text">Hello I'm</h2>
        <h3>Md Nazmul Hasan</h3>
         <h3><span id="element"></span></h3>
-         <p>I’m a Front End Web developer who is passionate about making error-free websites with 100% client satisfaction. I love to solve real-world problems. I am strategic, and <br>
+         <p class="my-paragrap">I’m a Front End Web developer who is passionate about making error-free websites with 100% client satisfaction. I love to solve real-world problems. I am strategic, and <br>
           goal-oriented, and always work with an end goal in mind.</p>
           <a href="./myCv.pdf" download="NazmulHasanCV" class="about-btn1">Download CV</a>
           <a href="contuctpage/contuct.html" class="about-btn">Contuct me</a>
@@ -366,10 +366,17 @@
 <script>
   AOS.init({
     offset: 120,
-    duration: 1500,
+    duration: 1000,
   });
 </script>
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer', '&amp; and vedio editor'],
+      typeSpeed: 100,
+      loop:true,
+    });
+</script>
 
 </body>
 </html>
